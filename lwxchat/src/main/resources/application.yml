@@ -1,0 +1,14 @@
+server:
+  port: 8012
+
+spring:
+  application:
+    name: lwxchat
+  dubbo:
+    appname: lwxchat
+#    registry: zookeeper://192.168.0.252:2181
+    registry: zookeeper://127.0.0.1:2181
+    protocol: dubbo
+    port: 20881
+    version: 1.0.0
+    monitor: registry

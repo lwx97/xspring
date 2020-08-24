@@ -1,0 +1,12 @@
+server:
+  port: 8011
+
+spring:
+  application:
+    name: chatproducer
+  dubbo:
+    appname: chatproducer
+    registry: zookeeper://127.0.0.1:2181
+    port: 20889
+    monitor: registry
+    version: 1.0.0
