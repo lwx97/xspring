@@ -1,0 +1,8 @@
+
+1. 修改D:\zookeeper\zookeeper-3.4.13\conf下的zoo_sample.cfg 文件名为 zoo.cfg并修改日志配置
+
+2. 新增data , log 文件夹
+dataDir=D:\\zookeeper\\data
+dataLogDir=D:\\zookeeper\\log
+
+3.启动项目即可
