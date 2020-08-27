@@ -9,6 +9,11 @@
     <artifactId>xspring</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>chatproducer</module>
+        <module>chatapi</module>
+        <module>lwxchat</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>

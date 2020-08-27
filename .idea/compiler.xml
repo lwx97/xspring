@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chatapi" />
         <module name="lwxchat" />
         <module name="chatproducer" />
         <module name="xspring" />
         <module name="chat_consumer" />
+        <module name="chatapi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

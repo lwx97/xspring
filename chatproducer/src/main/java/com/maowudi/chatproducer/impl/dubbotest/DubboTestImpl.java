@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Service(interfaceClass = DubboTest.class ,timeout = 600000)
-public class DubboTestImpl implements DubboTest {
+public class DubboTestImpl implements DubboTest{
 
     @Override
     public String dubboTest(String hello) {
