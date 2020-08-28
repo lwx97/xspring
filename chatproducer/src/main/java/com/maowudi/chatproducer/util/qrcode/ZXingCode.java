@@ -4,8 +4,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -19,7 +19,6 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 
 /**
  * 画制定logo和制定描述的二维码
@@ -110,9 +109,9 @@ public class ZXingCode {
             }
 
             image.flush();
-            ByteOutputStream outputStream = new ByteOutputStream();
-            ImageIO.write(image, "png", outputStream);
-            return outputStream.getBytes();
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            ImageIO.write(image, "png", byteArrayOutputStream);
+            return byteArrayOutputStream.toByteArray();
         } catch (Exception e) {
             e.printStackTrace();
         }

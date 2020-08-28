@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lwxchat" />
         <module name="chatproducer" />
-        <module name="xspring" />
         <module name="chat_consumer" />
         <module name="chatapi" />
       </profile>
