@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Java后端WebSocket的Tomcat实现</title>
+    <title>来聊天吧！</title>
 </head>
 <body>
     Welcome<br/>
@@ -19,6 +19,7 @@
 <script type="text/javascript">
     var websocket = null;
     var username = null;
+    var http = window.location.host;
     function onOpenWebSocket() {
         //判断是否取昵称
         username = document.getElementById("username").value;
@@ -28,7 +29,7 @@
         }
         //判断当前浏览器是否支持WebSocket
         if ('WebSocket' in window) {
-            websocket = new WebSocket("ws://127.0.0.1:8012/webSocket?username="+ username);
+            websocket = new WebSocket("ws://"+http+"/webSocket?username="+ username);
         } else {
             alert('当前浏览器 Not support webSocket')
         }
